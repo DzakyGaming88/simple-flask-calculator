@@ -1,0 +1,88 @@
+body {
+  background-color: #333333;
+}
+
+.container {  
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 1fr 50px;
+  grid-template-rows: 50px 1fr 1fr 1fr 1fr auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . . ."
+    ". content content content ."
+    ". content content content ."
+    ". content content content ."
+    ". content content content ."
+    ". . . . .";
+}
+
+.content {  
+  display: grid;
+  grid-template-columns: 10px 1fr 1fr 1fr 1fr 10px;
+  grid-template-rows: 10px 1fr 1fr 1fr 1fr 1fr 10px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . . . ."
+    ". title title title title ."
+    ". area1 area1 area1 area1 ."
+    ". area2 area2 area2 area2 ."
+    ". button1 button2 button3 button4 ."
+    ". text text text text ."
+    ". . . . . .";
+  grid-area: content;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background: #6d6d6d;
+  -webkit-box-shadow: 0 0 6px 2px rgba(0,0,0,0.5) ;
+  box-shadow: 0 0 6px 2px rgba(0,0,0,0.5) ;
+}
+
+.title {
+  justify-self: center;
+  align-self: center;
+  grid-area: title;
+}
+
+.area1 {
+  justify-self: center;
+  align-self: center;
+  grid-area: area1;
+}
+
+.area2 {
+  justify-self: center;
+  align-self: center;
+  grid-area: area2;
+}
+
+.button1 {
+  justify-self: center;
+  align-self: center;
+  grid-area: button1;
+}
+
+.button2 {
+  justify-self: center;
+  align-self: center;
+  grid-area: button2;
+}
+
+.button3 {
+  justify-self: center;
+  align-self: center;
+  grid-area: button3;
+}
+
+.button4 {
+  justify-self: center;
+  align-self: center;
+  grid-area: button4;
+}
+
+.text {
+  justify-self: stretch;
+  align-self: center;
+  grid-area: text;
+}
