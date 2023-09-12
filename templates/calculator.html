@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Flask</title>
+    <link rel="stylesheet" type="text/css" href="/static/display.css">
+    <link rel="stylesheet" type="text/css" href="/static/item.css">
+</head>
+<body>
+    <div class="container">
+        <form method="POST" class="content">
+            <div class="title"><h1>Calculator Flask</h1></div>
+            <div class="area1"><input class="input-css" type="text" name="num1" placeholder="First Number" required></div>
+            <div class="area2"><input class="input-css" type="text" name="num2" placeholder="Second Number" required></div>
+            <div class="button1"><button class="button-css" type="submit" name="operation" value="+">+</button></div>
+            <div class="button2"><button class="button-css" type="submit" name="operation" value="-">-</button></div>
+            <div class="button3"><button class="button-css" type="submit" name="operation" value="*">*</button></div>
+            <div class="button4"><button class="button-css" type="submit" name="operation" value="/">/</button></div>
+            <div class="text"><h2>The result is: {{ result }}</h2></div>
+        </form>
+    </div>
+</body>
+</html>
